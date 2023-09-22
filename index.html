@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shoe page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid justify-content-end">
+        <img
+          src="data:image/png;base64,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"
+          alt="" width="70px" height="70px" class="img">
+        <a class="navbar-brand fw-bold ms-3" href="#">Sneakers</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Women</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="avatar d-flex justify-content-center align-items-center gap-3">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <img class="avatar_pic"
+              src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"
+              alt=""></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="mainimg">
+          <img
+            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/393535/01/fnd/IND/fmt/png/PUMA-x-THE-SMURFS-Slipstream-Unisex-Sneakers"
+            alt="" width="350px" height="350px">
+        </div>
+        <div class="minishoes">
+          <img
+            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/393535/01/sv01/fnd/IND/fmt/png/PUMA-x-THE-SMURFS-Slipstream-Unisex-Sneakers"
+            alt="">
+          <img
+            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/393535/01/mod01/fnd/IND/fmt/png/PUMA-x-THE-SMURFS-Slipstream-Unisex-Sneakers"
+            alt="" class="img1">
+          <img
+            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/393535/01/sv02/fnd/IND/fmt/png/PUMA-x-THE-SMURFS-Slipstream-Unisex-Sneakers"
+            alt="" class="img1">
+          <img
+            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/393535/01/sv04/fnd/IND/fmt/png/PUMA-x-THE-SMURFS-Slipstream-Unisex-Sneakers"
+            alt="" class="img1">
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 mt-5">
+        <div>
+          <h6 style="color:rgb(154, 73, 220);">Sneaker company</h6>
+          <h1>Fall Limitted Edition <br>Sneakers</h1>
+        </div>
+        <div>
+          <p style="color: rgb(150, 147, 147);">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Facere aliquid ex asperiores, aliquam fuga odio
+            sint,<br> explicabo harum voluptas, perferendis possimus unde eum labore<br> pariatur obcaecati alias cumque
+            eos beatae!
+          </p>
+        </div>
+        <div>
+          <span style="font-weight: bold; font-size: 20px;">$125.00</span>
+          <span
+            style="background-color: rgb(241, 231, 250); font-size: 15px; color: rgb(165, 86, 235); border-radius: 5px; margin-left: 10px;padding-left: 7px; padding-right: 7px;">50%</span>
+        </div>
+        <div>
+          <p style="text-decoration: line-through; font-size: 13px; font-weight: bold; color: rgb(202, 202, 202);">
+            $250.00</p>
+        </div>
+        <div class="d-flex">
+          <span
+            style="background-color: rgba(250, 241, 241, 0.865); border-radius: 6px;padding-top: 8px;padding-bottom: 8px;padding-left: 15px;padding-right: 15px;">
+            <span style="margin-left: 0px;padding-right: 10px;color: rgb(183, 28, 255); font-weight: 900;">-</span><span
+              class="ms-0">0</span><span
+              style="margin-right: 0px;padding-left: 10px;color: rgb(183, 28, 255); font-weight: 900;">+</span></span>
+          <div class="ms-2">
+            <button
+              style="background-color: rgb(155, 68, 216);color: white;font-size: 13px;border: none;padding-left: 30px;padding-right: 30px;padding-top: 10px;padding-bottom:10px;border-radius: 5px;">
+              <i class="fa-solid fa-cart-shopping" style="color: #ebedef;"></i>Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+<style>
+  /* .img {
+    margin-left: 30px;
+  } */
+
+  .avatar_pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+  }
+
+  .avatar {
+    margin-left: 705px;
+  }
+
+  .minishoes {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    margin-top: 50px;
+    border-radius: 8px;
+  }
+
+  .img1 {
+    margin-left: 5px;
+  }
+
+  .mainimg {
+    margin-top: 30px;
+    border-radius: 10px;
+    animation: rotate 2s infinite;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(-360deg)
+    }
+  }
+  @media(max-width: 660px){
+    .mainimg{
+      width: 120px;
+    }
+  }
+  
